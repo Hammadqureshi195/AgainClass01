@@ -1,4 +1,4 @@
-name: Expense Tracker App Deployment
+name: ClassAgain
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -27,4 +27,4 @@ jobs:
       run: npm install -g surge
 
     - name: Run Surge
-      run: surge ./build againclass.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build againclass.surge.sh --token ${{secrets.SURGE_TOKEN}}
